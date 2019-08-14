@@ -108,6 +108,10 @@ $(function() {
   // 3. 重置功能实现
   $('[type="reset"]').click(function() {
     console.log( 1111 );
+    //调用插件的方法进行重置校验状态
+    //resetForm（boolean）
+    //传true重置内容和状态
+    //传false只重置校验状态
     // 除了重置文本, 还要重置校验状态
     $('#form').data("bootstrapValidator").resetForm();
   });
